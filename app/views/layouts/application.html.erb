@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -44,7 +45,7 @@
         	<%= simple_form_for Quote.new do |f| %>
         	<div class="modal-body">
 				<%= f.input :saying, :label => "What is the saying you want to add?", :placeholder => "Writing one word is always better than zero." %>
-				
+
 				<br />
 				<%= f.input :author, :label => "Who is the author of the quote?", :placeholder => 'K. C. Jeon' %>
         	</div>
